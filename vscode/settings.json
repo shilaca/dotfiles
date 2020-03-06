@@ -1,0 +1,75 @@
+{
+  "editor.wordWrap": "on",
+  "editor.renderWhitespace": "all",
+  "window.zoomLevel": 0,
+  "editor.tabSize": 2,
+
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "typescript.preferences.quoteStyle": "single",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+
+  "[python]": {
+    "editor.tabSize": 4
+  },
+
+  "[makefile]": {
+    "editor.insertSpaces": false,
+    "editor.tabSize": 4
+  },
+
+  "files.associations": {
+    "*.html": "html"
+  },
+  "files.trimTrailingWhitespace": true,
+
+  "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.folders.theme": "specific",
+  "material-icon-theme.activeIconPack": "angular",
+  "material-icon-theme.opacity": 0.6,
+
+  "glsllint.glslangValidatorPath": "glslangValidator",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+
+  "eslint.enable": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+
+  "hlsl.openDocOnSide": true,
+  "hlsl.suggest.basic": true,
+
+  // GitLens
+  "gitlens.currentLine.scrollable": false,
+
+  // vim settings
+  "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+  "vim.easymotion": true,
+  "vim.visualstar": true,
+  "vim.useCtrlKeys": true,
+  "python.jediEnabled": false,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "window.restoreFullscreen": true,
+  "cSpell.userWords": [
+    "CRAD",
+    "focusable",
+    "gltf",
+    "tagify",
+    "tweakpane"
+  ],
+  "javascript.updateImportsOnFileMove.enabled": "always",
+}

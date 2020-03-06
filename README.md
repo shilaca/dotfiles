@@ -5,6 +5,9 @@
 ```
 
 ## for mac
-```
+```bash
 $ sh dotfilesLink.sh
+
+# vscode
+$ sh vscode/setup.sh
 ```
