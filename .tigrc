@@ -1,0 +1,18 @@
+# common
+set wrap-lines = yes
+
+
+# diff
+set diff-context = 6
+
+
+# view
+set main-view = id date author commit-title:graph=yes,refs=yes
+
+set split-view-height = 80%
+
+
+# key bind
+
+bind status  C  !npx git-cz
+
