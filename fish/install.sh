@@ -16,15 +16,22 @@ fi
 
 
 confd=$path/conf.d
-if [[ ! -e $confd/ghq.fish ]]; then
-  ln -snfv $PWD/conf.d/ghq.fish $confd/ghq.fish
-fi
+cd ./conf.d
+for f in *.fish
+do
+  if [[ ! -e $confd/"${f}" ]]; then
+    ln -snfv $PWD/"${f}" $confd/"${f}"
+  fi
+done
+cd ..
 
 
 functions=$path/functions
 cd ./functions
 for f in *.fish
 do
-  ln -snfv $PWD/"${f}" $functions/"${f}"
+  if [[ ! -e $functions/"${f}" ]]; then
+    ln -snfv $PWD/"${f}" $functions/"${f}"
+  fi
 done
 cd ..
