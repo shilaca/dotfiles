@@ -3,7 +3,6 @@ batisteo.vscode-django
 CADENAS.vscode-glsllint
 cesium.gltf-vscode
 circledev.glsl-canvas
-CoenraadS.bracket-pair-colorizer
 dbaeumer.vscode-eslint
 donjayamanne.jupyter
 donjayamanne.python-extension-pack
@@ -18,16 +17,14 @@ magicstack.MagicPython
 Mikael.Angular-BeastCode
 ms-azuretools.vscode-docker
 ms-python.python
+ms-toolsai.jupyter
 ms-vscode.cpptools
 ms-vscode.vscode-typescript-tslint-plugin
 ms-vsliveshare.vsliveshare
 njpwerner.autodocstring
-oderwat.indent-rainbow
 PKief.material-icon-theme
-robinbentley.sass-indented
 rust-lang.rust
 shanoor.vscode-nginx
-shinnn.stylelint
 slevesque.shader
 steoates.autoimport
 streetsidesoftware.code-spell-checker

@@ -1,21 +1,22 @@
 #!/bin/bash
 
-path=~/.config/fish
-if [ ! -e $path ]; then
-  mkdir -p $path
+confPath=~/.config
+fishPath=$confPath/fish
+if [ ! -e $fishPath ]; then
+  mkdir -p $fishPath
 fi
 
-if [[ ! -e $path/config.fish ]]; then
-  ln -snfv $PWD/config.fish $path/config.fish
+if [[ ! -e $fishPath/config.fish ]]; then
+  ln -snfv $PWD/config.fish $fishPath/config.fish
 fi
 
 
-if [[ ! -e $path/functions/fisher.fish ]]; then
+if [[ ! -e $fishPath/functions/fisher.fish ]]; then
   curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
 fi
 
 
-confd=$path/conf.d
+confd=$fishPath/conf.d
 cd ./conf.d
 for f in *.fish
 do
@@ -26,7 +27,7 @@ done
 cd ..
 
 
-functions=$path/functions
+functions=$fishPath/functions
 cd ./functions
 for f in *.fish
 do
@@ -35,3 +36,10 @@ do
   fi
 done
 cd ..
+
+
+starship=starship.toml
+starshipPath=$confPath/$starship
+if [ ! -e $starshipPath ]; then
+  ln -snfv $PWD/$starship $starshipPath
+fi
