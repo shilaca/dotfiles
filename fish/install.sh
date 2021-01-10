@@ -29,7 +29,7 @@ cd ..
 
 functions=$fishPath/functions
 cd ./functions
-for f in *.fish
+for f in {*.fish,*.bat}
 do
   if [[ ! -e $functions/"${f}" ]]; then
     ln -snfv $PWD/"${f}" $functions/"${f}"
