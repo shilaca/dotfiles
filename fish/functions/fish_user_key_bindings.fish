@@ -1,3 +1,3 @@
 function fish_user_key_bindings
-  bind \cg ghq_fzf_repo
+  bind \cg __ghq_cd_repository
 end
