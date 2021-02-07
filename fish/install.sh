@@ -17,6 +17,9 @@ fi
 
 
 confd=$fishPath/conf.d
+if [ ! -e $confd ]; then
+  mkdir -p $confd
+fi
 cd ./conf.d
 for f in *.fish
 do

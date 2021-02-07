@@ -3,6 +3,7 @@ path=~/.tmux
 
 if [ ! -e $path ]; then
   mkdir -p $path
+  apt install tmux
 fi
 
 if [ ! -e $path/plugins/tpm ]; then
