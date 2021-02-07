@@ -16,6 +16,7 @@ hook_add = '''
 repo = 'vim-airline/vim-airline'
 hook_add = '''
   let g:airline_theme = 'spaceduck'
+  let g:airline#extensions#tabline#enabled = 1
 '''
 
 [[plugins]]
@@ -96,6 +97,10 @@ depends = 'coc.nvim'
 hook_add = '''
   nmap <space>e :CocCommand explorer<CR>
 '''
+
+[[plugins]]
+repo = 'neoclide/coc-tsserver'
+depends = 'coc.nvin'
 
 [[plugins]]
 repo = 'kkiyama117/coc-toml'
