@@ -43,3 +43,20 @@ directory の設定
 ```.gitconfig
 root = ~/Repositories
 ```
+
+# tmux
+```bash
+$ cd tmux
+$ sh install.sh
+```
+
+plugin の install
+```
+$ tmux
+
+# plugin の install
+(prefix) + I
+
+# plugin の update
+(prefix) + U
+```
