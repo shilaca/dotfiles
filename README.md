@@ -24,6 +24,9 @@ $ code --list-extensions > vscode/extensions
 
 # fish
 
+現状実行する前に fish shell を install する必要がある
+https://github.com/fish-shell/fish-shell
+
 ```bash
 $ cd fish
 $ sh install.sh
@@ -39,9 +42,10 @@ $ fisher install decors/fish-ghq
 ```
 
 directory の設定
-
+`~/.gitconfig` に追記
 ```.gitconfig
-root = ~/Repositories
+[ghq]
+  root = ~/Repositories
 ```
 
 # tmux
