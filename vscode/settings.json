@@ -3,32 +3,19 @@
   "editor.renderWhitespace": "all",
   "window.zoomLevel": 0,
   "editor.tabSize": 2,
+  "editor.suggestSelection": "first",
   "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "[html]": {
-    "editor.formatOnSave": false
-  },
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
-  "[typescript]": {
-    "editor.formatOnSave": false,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-    // "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
-  "typescript.updateImportsOnFileMove.enabled": "never",
-  "typescript.preferences.quoteStyle": "single",
   "typescript.preferences.importModuleSpecifier": "non-relative",
   "[python]": {
     "editor.tabSize": 4
   },
+  "python.languageServer": "Pylance",
   "python.linting.mypyEnabled": true,
-  "python.linting.pylintArgs": [
-    "--load-plugins=pylint_django"
-  ],
+  "python.linting.pylintArgs": ["--load-plugins=pylint_django"],
   "autoDocstring.docstringFormat": "google",
   "[yaml]": {
     "editor.quickSuggestions": {
@@ -51,7 +38,6 @@
   "material-icon-theme.activeIconPack": "angular",
   "material-icon-theme.opacity": 0.6,
   "glsllint.glslangValidatorPath": "glslangValidator",
-  "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "eslint.enable": true,
   "eslint.validate": [
@@ -60,6 +46,7 @@
     "typescript",
     "typescriptreact"
   ],
+  "stylelint.enable": true,
   "hlsl.openDocOnSide": true,
   "hlsl.suggest.basic": true,
   // GitLens
@@ -70,21 +57,17 @@
   "vim.easymotion": true,
   "vim.visualstar": true,
   "vim.useCtrlKeys": true,
-  "python.jediEnabled": false,
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "window.restoreFullscreen": true,
   "cSpell.userWords": [
+    "Conv",
+    "coord",
     "CRAD",
     "focusable",
+    "glsl",
     "gltf",
+    "shilaca",
     "tagify",
+    "tfjs",
     "tweakpane",
     "unsubscriber"
-  ],
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "python.languageServer": "Pylance",
+  ]
 }

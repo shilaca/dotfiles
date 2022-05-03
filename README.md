@@ -10,13 +10,21 @@
 $ sh dotfilesLink.sh
 ```
 
+_golang を別途インストールする必要がある、fish に path の設定が書いてあるから途中まで実行したら一旦 fish の設定まで先にやったほうがいいかも_
+
+
 # vscode
 
 code command が必要になるので vscode を install して code command を install してから実行する。
 
+**mac と win (wsl) とで path が違うので注意 (file を修正する)**
+
 ```bash
 # install
+# for mac
 $ sh vscode/setup.sh
+# for win (wsl)
+$ sh vscode/setup.sh [user name (path name)]
 
 # export extensions list
 $ code --list-extensions > vscode/extensions
@@ -49,6 +57,9 @@ directory の設定
 ```
 
 # tmux
+
+**shell の path が mac と win (wsl) で違うので修正する**
+
 ```bash
 $ cd tmux
 $ sh install.sh
