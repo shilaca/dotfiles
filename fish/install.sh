@@ -32,7 +32,7 @@ cd ..
 
 functions=$fishPath/functions
 cd ./functions
-for f in {*.fish,*.bat}
+for f in *.fish
 do
   if [ ! -e $functions/"${f}" ]; then
     ln -snfv $PWD/"${f}" $functions/"${f}"
@@ -41,7 +41,7 @@ done
 cd ..
 
 
-starshipPath=/usr/local/bin
+starshipPath=/usr/local/bin/starship
 if [ ! -e $starshipPath ]; then
   curl -fsSL https://starship.rs/install.sh | bash
 fi

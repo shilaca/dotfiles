@@ -1,7 +1,8 @@
 set -U FZF_LEGACY_KEYBINDINGS 0
 
 # golang
-set -x PATH $HOME/go/bin $PATH
+set -x GOPATH $HOME/go
+set -x PATH $GOPATH/bin $PATH
 
 # anyenv settings
 set -x PATH $HOME/.anyenv/bin $PATH

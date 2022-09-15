@@ -12,22 +12,35 @@ do
     [ "$f" = ".DS_Store" ] && continue
 
     ln -snfv ${DOTFILES_PATH}/"${f}" ~/"${f}"
+    ~/.anyenv/bin/anyenv init
+    anyenv install --init
 done
 
 # install anyenv
 anyenvPath=~/.anyenv
 if [ ! -e $anyenvPath ]; then
-  git clone https://github.com/anyenv/anyenv $anyenvPaht
+  git clone https://github.com/anyenv/anyenv $anyenvPath
+fi
+anyenvPluginPath=$anyenvPath/plugins
+if [ ! -e $anyenvPluginPath ]; then
+  mkdir -p $anyenvPluginPath
+fi
+if [ ! -e $anyenvPluginPath/anyenv-update ]; then
+  git clone https://github.com/znz/anyenv-update.git $anyenvPluginPath/anyenv-update
 fi
 
 # install ghq
-ghqPath=~/.ghq
-if [ ! -e $ghqPath ]; then
-  git clone https://github.com/x-motemen/ghq $ghqPath
-  cd $ghqPath
-  make install
-  cd $DOTFILES_PATH
-fi
+# https://github.com/x-motemen/ghq
+# install golang
+# $ go get github.com/x-motemen/ghq
+
+# ghqPath=~/.ghq
+# if [ ! -e $ghqPath ]; then
+#   git clone https://github.com/x-motemen/ghq $ghqPath
+#   cd $ghqPath
+#   make install
+#   cd $DOTFILES_PATH
+# fi
 
 # install fzf
 fzfPath=~/.fzf

@@ -4,10 +4,12 @@
   "window.zoomLevel": 0,
   "editor.tabSize": 2,
   "editor.suggestSelection": "first",
+  "editor.bracketPairColorization.enabled": false,
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
   },
   "typescript.preferences.importModuleSpecifier": "non-relative",
   "[python]": {
@@ -17,6 +19,16 @@
   "python.linting.mypyEnabled": true,
   "python.linting.pylintArgs": ["--load-plugins=pylint_django"],
   "autoDocstring.docstringFormat": "google",
+  "[rust]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "rust-lang.rust"
+  },
+  "rust-analyzer.checkOnSave.command": "clippy",
+  "rust-analyzer.checkOnSave.extraArgs": [
+    "--",
+    "-A",
+    "clippy::needless_return"
+  ],
   "[yaml]": {
     "editor.quickSuggestions": {
       "other": true,
@@ -40,12 +52,6 @@
   "glsllint.glslangValidatorPath": "glslangValidator",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "eslint.enable": true,
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
   "stylelint.enable": true,
   "hlsl.openDocOnSide": true,
   "hlsl.suggest.basic": true,
